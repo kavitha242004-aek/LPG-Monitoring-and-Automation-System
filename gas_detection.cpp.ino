@@ -63,7 +63,7 @@ void checkGasLeakage() {
     // Send SMS Alert
     sendSMS("Gas leakage detected! Please take immediate action.");
     // Make a call
-    makeCall("+919489324860"); // Replace with the phone number
+    makeCall("+91XXXXXXXXXX"); // Replace with the phone number
 
     // Return the servo to the original position after some time
     delay(5000);
@@ -95,7 +95,7 @@ void sendATCommand(String command) {
 
 // Send SMS using SIM800L
 void sendSMS(String message) {
-  sendATCommand("AT+CMGS=\"+919489324860\""); // Replace with the phone number
+  sendATCommand("AT+CMGS=\"+91XXXXXXXXXX\""); // Replace with the phone number
   delay(1000);
   SIM800L.println(message); // SMS message content
   delay(1000);
